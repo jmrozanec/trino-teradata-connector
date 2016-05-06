@@ -49,8 +49,7 @@ Below we list resources related to Prestor connectors. If you wrote a Presto con
 Contributions are welcome! You can contribute by
  * starring this repo!
  * requesting or adding new features.
- * enhancing existing code: ex.: provide more accurate description cases
- * testing
- * enhancing documentation
- * bringing suggestions and reporting bugs
+ * enhancing existing code or documentation.
+ * testing.
+ * bringing suggestions and reporting bugs.
  * spreading the word / telling us how you use it!
