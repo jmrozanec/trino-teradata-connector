@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.facebook.presto</groupId>
+	<artifactId>presto-teradata</artifactId>
+	<version>0.130</version>
+	<description>Presto - Teradata Connector</description>
+	<packaging>jar</packaging>
+
+	<licenses>
+		<license>
+			<name>Apache 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<id>jmrozanec</id>
+			<url>https://github.com/jmrozanec</url>
+		</developer>
+	</developers>
+
+	<issueManagement>
+		<url>https://github.com/jmrozanec/presto/issues</url>
+		<system>GitHub Issues</system>
+	</issueManagement>
+
+	<repositories>
+		<repository>
+			<!--http://www.hascode.com/2010/03/how-to-add-a-local-lib-directory-to-maven/-->
+			<id>lib</id>
+			<name>lib</name>
+			<releases>
+				<enabled>true</enabled>
+				<checksumPolicy>ignore</checksumPolicy>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<url>file://${project.basedir}/lib</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.facebook.presto</groupId>
+			<artifactId>presto-base-jdbc</artifactId>
+			<version>0.130</version>
+		</dependency>
+		<dependency>
+			<groupId>io.airlift</groupId>
+			<artifactId>units</artifactId>
+			<version>0.120</version>
+		</dependency>
+		<dependency>
+			<groupId>io.airlift</groupId>
+			<artifactId>configuration</artifactId>
+			<version>0.120</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>18.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.inject</groupId>
+			<artifactId>guice</artifactId>
+			<version>4.0</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>1.1.0.Final</version>
+		</dependency>
+		<!-- Presto SPI -->
+		<dependency>
+			<groupId>com.facebook.presto</groupId>
+			<artifactId>presto-spi</artifactId>
+			<version>0.130</version>
+		</dependency>
+		<dependency>
+			<groupId>io.airlift</groupId>
+			<artifactId>slice</artifactId>
+			<version>0.18</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<version>1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>2.4.4</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.4.4</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.teradata</groupId>
+			<artifactId>config</artifactId>
+			<version>15.10.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.teradata</groupId>
+			<artifactId>jdbc</artifactId>
+			<version>15.10.0</version>
+		</dependency>
+	</dependencies>
+
+</project>
