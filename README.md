@@ -22,7 +22,8 @@ Create new properties file inside etc/catalog dir:
 
     connector.name=teradata
     # connection-url is the Teradata JDBC URL. You may use different configurations per environment.
-    # For more information, please visit [JDBC driver docs](https://developer.teradata.com/doc/connectivity/jdbc/reference/current/jdbcug_chapter_2.html)
+    # For more information, please visit 
+    # [JDBC driver docs](https://developer.teradata.com/doc/connectivity/jdbc/reference/current/jdbcug_chapter_2.html)
     connection-url=jdbc:teradata://aaa.bbb.ccc.ddd/TMODE=ANSI,CHARSET=UTF8
 	connection-user=someusername
 	connection-password=somepassword
