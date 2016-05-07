@@ -1,12 +1,16 @@
 # Presto-Teradata Connector
 
-This is a plugin for Presto that allow you to query Teradata from [PrestoDB](https://prestodb.io/)
+This is a [PrestoDB](https://prestodb.io/) connector to query data from [Teradata](http://www.teradata.com/)
 
-This product is under development. Queries "walk", but you can help us make them run! ;) 
-You are welcome to stop by and help us enhance it.
+Queries "walk", but you can help us make them run! ;) You are welcome to stop by and contribute.
 
-## Project development
-We do not provide Teradata JDBC jars, since they require to agree on some terms due to US Legislation.
+[![Gitter Chat](http://img.shields.io/badge/chat-online-brightgreen.svg)](https://gitter.im/jmrozanec/presto-teradata-connector)
+[![Project stats by OpenHub](https://www.openhub.net/p/presto-teradata-connector/widgets/project_thin_badge.gif)](https://www.openhub.net/p/presto-teradata-connector/)
+
+## Development
+
+### Set up
+We do not provide Teradata JDBC jars, since they require to agree on some terms due to US legislation.
 After cloning this repo, you should 
 
 * download Teradata JDBC drivers from [here](https://downloads.teradata.com/download/connectivity/jdbc-driver)
@@ -16,7 +20,15 @@ After cloning this repo, you should
         $PROJECT_HOME/lib/com/teradata/config/15.10.0/config-15.10.0.jar
         $PROJECT_HOME/lib/com/teradata/jdbc/15.10.0/jdbc-15.10.0.jar
 
-## Connection Configuration
+
+### Building the project
+To build Presto Teradata Connector, execute:
+
+    mvn clean install
+ 
+
+## Presto-Teradata connector installation
+### Connection Configuration
 
 Create new properties file inside etc/catalog dir:
 
@@ -32,13 +44,8 @@ To install the connector, copy presto-teradata-{version}.jar and jars at presto-
     cd $PRESTODB_HOME
     mkdir -p plugin/teradata
     cp /tmp/teradata-jars/* plugin/teradata
-
-## Building Presto Teradata Connector
-
-To build Presto Teradata Connector, execute:
-
-    mvn clean install
-    
+   
+   
 ## Related resources
 Below we list resources related to Prestor connectors. If you wrote a Presto connector to any database, we want to hear from you!
 
