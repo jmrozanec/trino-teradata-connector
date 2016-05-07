@@ -34,7 +34,8 @@ Create new properties file inside etc/catalog dir:
 
     connector.name=teradata
     # connection-url is the Teradata JDBC URL. You may use different configurations per environment.
-    # For more information, please visit [JDBC driver docs](https://developer.teradata.com/doc/connectivity/jdbc/reference/current/jdbcug_chapter_2.html)
+    # For more information, please visit 
+    # [JDBC driver docs](https://developer.teradata.com/doc/connectivity/jdbc/reference/current/jdbcug_chapter_2.html)
     connection-url=jdbc:teradata://aaa.bbb.ccc.ddd/TMODE=ANSI,CHARSET=UTF8
 	connection-user=someusername
 	connection-password=somepassword
@@ -56,8 +57,7 @@ Below we list resources related to Prestor connectors. If you wrote a Presto con
 Contributions are welcome! You can contribute by
  * starring this repo!
  * requesting or adding new features.
- * enhancing existing code: ex.: provide more accurate description cases
- * testing
- * enhancing documentation
- * bringing suggestions and reporting bugs
+ * enhancing existing code or documentation.
+ * testing.
+ * bringing suggestions and reporting bugs.
  * spreading the word / telling us how you use it!
