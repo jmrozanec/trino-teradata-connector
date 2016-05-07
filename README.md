@@ -40,7 +40,7 @@ Create new properties file inside etc/catalog dir:
 	connection-user=someusername
 	connection-password=somepassword
 
-To install the connector, copy presto-teradata-{version}.jar and jars at presto-dependencies folder to some location, ex.: /tmp/teradata-jars
+To install the connector, copy presto-teradata-{version}.jar and jars at $PROJECT_HOME/presto-dependencies/ directory to some location, ex.: /tmp/teradata-jars/
 
     cd $PRESTODB_HOME
     mkdir -p plugin/teradata
