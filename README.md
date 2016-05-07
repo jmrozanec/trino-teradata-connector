@@ -1,5 +1,7 @@
 # Presto-Teradata Connector
 
+[![Join the chat at https://gitter.im/jmrozanec/presto-teradata-connector](https://badges.gitter.im/jmrozanec/presto-teradata-connector.svg)](https://gitter.im/jmrozanec/presto-teradata-connector?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 This is a plugin for Presto that allow you to query Teradata from [PrestoDB](https://prestodb.io/)
 
 This product is under development. Queries "walk", but you can help us make them run! ;) 
