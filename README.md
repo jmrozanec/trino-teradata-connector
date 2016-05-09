@@ -54,7 +54,7 @@ To install the connector, copy presto-teradata-{version}.jar and jars at $PROJEC
  
 
 ## Related resources
-Below we list resources related to Prestor connectors. If you wrote a Presto connector to any database, we want to hear from you!
+Below we list resources related to Presto connectors. If you wrote a Presto connector to any database, we want to hear from you!
 
 * [Prestogres: connecting postgres to Presto](http://www.slideshare.net/frsyuki/presto-meetup)
 
