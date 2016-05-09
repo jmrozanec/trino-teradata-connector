@@ -47,6 +47,12 @@ To install the connector, copy presto-teradata-{version}.jar and jars at $PROJEC
     cp /tmp/teradata-jars/* plugin/teradata
    
    
+   
+## Known issues and limitations
+* [Presto may not support all keywords from Teradata SQL dialect](https://groups.google.com/forum/#!topic/presto-users/tXBuNa19hg8)
+* [Presto elaborates its own execution plan before submitting to Teradata](https://groups.google.com/forum/#!topic/presto-users/tXBuNa19hg8), which may result in non optimal performance.
+ 
+
 ## Related resources
 Below we list resources related to Prestor connectors. If you wrote a Presto connector to any database, we want to hear from you!
 
