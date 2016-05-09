@@ -27,8 +27,8 @@ To build Presto Teradata Connector, execute:
     mvn clean install
  
 
-## Presto-Teradata connector installation
-### Connection Configuration
+## Installation
+### Connection configuration
 
 Create new properties file inside etc/catalog dir:
 
