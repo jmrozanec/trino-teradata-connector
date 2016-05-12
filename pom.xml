@@ -11,7 +11,7 @@
 
 	<groupId>ml.prestoconnectors</groupId>
 	<artifactId>presto-teradata</artifactId>
-	<version>0.130.1</version>
+	<version>0.130.2-SNAPSHOT</version>
 
 	<name>presto-teradata-connector</name>
 	<description>Presto-Teradata Connector</description>
