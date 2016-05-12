@@ -15,56 +15,84 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Presto Database connectors</h1>
-        <p>Presto Database connectors</p>
+        <h1>Presto connectors</h1>
 
-        <p class="view"><a href="https://github.com/jmrozanec/presto-teradata-connector">View the Project on GitHub <small>jmrozanec/presto-teradata-connector</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/jmrozanec/presto-teradata-connector/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/jmrozanec/presto-teradata-connector/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/jmrozanec/presto-teradata-connector">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
         <h3>
-<a id="about-the-initiative" class="anchor" href="#about-the-initiative" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About the initiative.</h3>
-
-<h4>
-<a id="what-is-presto" class="anchor" href="#what-is-presto" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What is Presto?</h4>
+<a id="what-is-presto" class="anchor" href="#what-is-presto" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What is Presto?</h3>
 
 <p><a href="https://prestodb.io">Presto</a> is an open source distributed SQL query engine for running interactive analytic queries against data sources of all sizes ranging from gigabytes to petabytes. Among its features, it enables you to connect to other databases using some connector, in order to perform queries and joins over several sources.</p>
+
+<h3>
+<a id="contact" class="anchor" href="#contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Versioning</h3>
+
+<p>We use a <i>major.minor.patch</i> version, where <i>major.minor</i> match Presto version the connector is compatible with; and <i>patch</i> refers to versions of the connector for that Presto version.</p>
+
+<h3>
+<a id="contact" class="anchor" href="#contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contact</h3>
+
+<p>If you have some suggestions, questions to ask or a connector to register, please reach us at our <a href="https://gitter.im/jmrozanec/presto-connectors">Gitter chatroom</a></p>
+
+      </header>
+      <section>
+        <h2>
+<a id="about-the-initiative" class="anchor" href="#about-the-initiative" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About the initiative.</h2>
+
 
 <h4>
 <a id="what-problem-do-we-solve" class="anchor" href="#what-problem-do-we-solve" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What problem do we solve?</h4>
 
-<p>Some databases require special license agreements in order to use their drivers, so there are many connectors that cannot be merged into Presto. Despite cannot be merged into Presto, we can provide a single place where to register those projects, so that they reach visibility and enhance collaboration within Presto community.</p>
+<p>Some databases require special license agreements in order to use their drivers, so many connectors that cannot be merged into Presto. By providing a single place where to list those projects, they reach visibility and enhance collaboration within Presto community.</p>
 
-<p>Our objectives are to provide:</p>
+<p><strong>Our goals are</strong> to provide a:</p>
 
 <ul>
-<li>a web page where developed connectors are listed and can be downloaded</li>
-<li>a template project with instructions, to reduce time for development of new projects</li>
-<li>a groupId and pom.xml snippets, so that connectors can be released and grouped at Maven Central with minimum effort</li>
+<li>web page where developed connectors are listed and can be downloaded</li>
+<li>template project with instructions, to reduce time of new connectors development</li>
+<li>groupId and pom.xml snippets, so that connectors can be released and grouped at Maven Central with minimum effort</li>
+<li>unified versioning convention for connectors</li>
 </ul>
 
 <h3>
-<a id="presto-database-connectors" class="anchor" href="#presto-database-connectors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Presto Database connectors</h3>
+<a id="presto-database-connectors" class="anchor" href="#presto-database-connectors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Presto connectors</h3>
 
 <table>
 <thead>
 <tr>
 <th>Supported database</th>
-<th>Project SCM</th>
+<th>Project URL</th>
 <th>Download link</th>
 </tr>
 </thead>
 <tbody>
+  <tr>
+<td><a href="http://cassandra.apache.org/">Cassandra</a></td>
+<td><a href="https://prestodb.io/docs/current/connector/cassandra.html">Presto-Cassandra Connector</a></td>
+<td>Native</td>
+</tr>
+<tr>
+<td><a href="https://hive.apache.org/">Hive</a></td>
+<td><a href="https://prestodb.io/docs/current/connector/hive.html">Presto-Hive Connector</a></td>
+<td>Native</td>
+</tr>
+<tr>
+<td><a href="https://www.mongodb.com/">MongoDB</a></td>
+<td><a href="https://prestodb.io/docs/current/connector/mongodb.html">Presto-MongoDB Connector</a></td>
+<td>Native</td>
+</tr>
+<tr>
+<td><a href="https://www.mysql.com/">MySQL</a></td>
+<td><a href="https://prestodb.io/docs/current/connector/mysql.html">Presto-MySQL Connector</a></td>
+<td>Native</td>
+</tr>
 <tr>
 <td><a href="https://www.oracle.com/">Oracle</a></td>
 <td><a href="https://github.com/marcelopaesrech/presto-oracle">Presto-Oracle Connector</a></td>
 <td></td>
+</tr>
+<tr>
+<td><a href="http://www.postgresql.org/">PostgreSQL</a></td>
+<td><a href="https://prestodb.io/docs/current/connector/postgresql.html">Presto-PostgreSQL Connector</a></td>
+<td>Native</td>
 </tr>
 <tr>
 <td><a href="http://www.teradata.com/">Teradata</a></td>
@@ -74,10 +102,7 @@
 </tbody>
 </table>
 
-<h3>
-<a id="contact" class="anchor" href="#contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contact</h3>
 
-<p>If you have some suggestions, questions to ask or a connector to register, please reach us at our <a href="https://gitter.im/jmrozanec/presto-connectors">Gitter chatroom</a></p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/jmrozanec">jmrozanec</a></p>
