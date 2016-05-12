@@ -6,6 +6,7 @@ Queries "walk", but you can help us make them run! ;) You are welcome to stop by
 
 [![Gitter Chat](http://img.shields.io/badge/chat-online-brightgreen.svg)](https://gitter.im/jmrozanec/presto-teradata-connector)
 [![Project stats by OpenHub](https://www.openhub.net/p/presto-teradata-connector/widgets/project_thin_badge.gif)](https://www.openhub.net/p/presto-teradata-connector/)
+[![Presto-Connectors Member](https://img.shields.io/badge/presto--connectors-member-green.svg)](http://presto-connectors.ml)
 
 ## Development
 
