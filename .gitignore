@@ -1,2 +1,5 @@
 target
 lib
+.idea
+*.iml
+presto-dependencies
