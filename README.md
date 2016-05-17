@@ -8,6 +8,17 @@ Queries "walk", but you can help us make them run! ;) You are welcome to stop by
 [![Project stats by OpenHub](https://www.openhub.net/p/presto-teradata-connector/widgets/project_thin_badge.gif)](https://www.openhub.net/p/presto-teradata-connector/)
 [![Presto-Connectors Member](https://img.shields.io/badge/presto--connectors-member-green.svg)](http://presto-connectors.ml)
 
+## Download
+
+presto-teradata-connector is available on [Maven central](http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22presto-teradata%22) repository.
+
+    <dependency>
+        <groupId>ml.prestoconnectors</groupId>
+        <artifactId>presto-teradata</artifactId>
+        <version>0.130.1</version>
+    </dependency>
+
+
 ## Development
 
 ### Set up
