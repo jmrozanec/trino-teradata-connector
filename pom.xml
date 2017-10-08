@@ -75,7 +75,7 @@
 	</repositories>
 
 	<properties>
-		<presto.version>0.130</presto.version>
+		<presto.version>0.175</presto.version>
 		<airlift.version>0.120</airlift.version>
 		<guava.version>18.0</guava.version>
 		<guice.version>4.0</guice.version>

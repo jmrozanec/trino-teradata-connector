@@ -166,7 +166,7 @@ public class TeradataClient extends BaseJdbcClient {
                 boolean found = false;
                 while (resultSet.next()) {
                     found = true;
-                    Type columnType = toPrestoType(resultSet.getInt("DATA_TYPE"));
+                    Type columnType = toPrestoType(resultSet.getInt("DATA_TYPE"), resultSet.getInt("COLUMN_SIZE"));
                     // skip unsupported column types
                     if (columnType != null) {
                         String columnName = resultSet.getString("COLUMN_NAME");
@@ -237,10 +237,10 @@ public class TeradataClient extends BaseJdbcClient {
     }
 
     @Override
-    public String buildSql(JdbcSplit split, List<JdbcColumnHandle> columnHandles) {
+    public PreparedStatement buildSql(Connection connection, JdbcSplit split, List<JdbcColumnHandle> columnHandles) throws SQLException {
         log.info("We are debugging how sql is built!");//TODO delete
         log.info(String.format("[split]: %s", split));
-        return super.buildSql(split, columnHandles);
+        return super.buildSql(connection, split, columnHandles);
     }
 
     @Override
